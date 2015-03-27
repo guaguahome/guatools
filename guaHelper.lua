@@ -12,7 +12,14 @@ function guaHelper.createAnimation(filePrex , start , endnumb ,delta)
 	return animation 
 end 
 
-
+--输出 table 的所有key组合
+function guaHelper.printKeys(table) 
+	local str = ""
+    for k,v in pairs(table) do
+        str = str .. " : " .. k
+    end
+    return str 
+end 
 
 
 
